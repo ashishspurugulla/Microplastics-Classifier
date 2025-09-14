@@ -10,7 +10,7 @@
 import os, sys, subprocess, importlib, math
 
 def _ensure(pkg):
-    try:
+    try: 
         importlib.import_module(pkg)
     except ImportError:
         print(f"📦 Installing {pkg} ...")
@@ -165,4 +165,5 @@ if __name__ == "__main__":
     except Exception as e:
         print("❌ Error:", e)
         sys.exit(1) 
+
 
